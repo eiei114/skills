@@ -10,17 +10,12 @@ Personal collection of reusable [pi](https://github.com/earendil-works/pi-coding
 
 ## Install
 
-### gh skill install (recommended)
-
 ```bash
-# Install for pi at user scope (available everywhere)
-gh skill install eiei114/skills gemini-video-analysis --agent pi --scope user
-
-# Install for pi at project scope (current repo only)
-gh skill install eiei114/skills gemini-video-analysis --agent pi
+# Install specific skill
+gh skill install eiei114/skills gemini-video-analysis
 
 # Install all skills
-gh skill install eiei114/skills --agent pi --scope user
+gh skill install eiei114/skills
 ```
 
 ## License
