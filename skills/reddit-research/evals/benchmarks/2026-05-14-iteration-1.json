@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "skill_name": "reddit-research",
+    "skill_path": "/Users/eiei114/IMspace/obsidian-note/.pi/skills/reddit-research",
+    "executor_model": "claude-sonnet-4",
+    "timestamp": "2026-05-14T10:06:10Z",
+    "evals_run": ["blox-fruits-complaints", "vampire-survivors-reception", "roblox-gamedev-topics"],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "blox-fruits-complaints",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": null,
+      "tokens": null
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "blox-fruits-complaints",
+      "configuration": "without_skill",
+      "pass_rate": 0.8,
+      "passed": 4,
+      "total": 5,
+      "time_seconds": null,
+      "tokens": null
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "vampire-survivors-reception",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": null,
+      "tokens": null
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "vampire-survivors-reception",
+      "configuration": "without_skill",
+      "pass_rate": 0.6,
+      "passed": 3,
+      "total": 5,
+      "time_seconds": null,
+      "tokens": null
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "roblox-gamedev-topics",
+      "configuration": "with_skill",
+      "pass_rate": 0.8,
+      "passed": 4,
+      "total": 5,
+      "time_seconds": null,
+      "tokens": null
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "roblox-gamedev-topics",
+      "configuration": "without_skill",
+      "pass_rate": 0.8,
+      "passed": 4,
+      "total": 5,
+      "time_seconds": null,
+      "tokens": null
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "avg_pass_rate": 0.93,
+      "avg_time_seconds": null,
+      "avg_tokens": null
+    },
+    "without_skill": {
+      "avg_pass_rate": 0.73,
+      "avg_time_seconds": null,
+      "avg_tokens": null
+    },
+    "delta": {
+      "pass_rate": "+0.20",
+      "time_seconds": null,
+      "tokens": null
+    }
+  },
+  "notes": [
+    "with_skill consistently uses old.reddit.com JSON API (curl+jq pattern)",
+    "without_skill falls back to Redlib mirrors or generic web search, missing API references",
+    "Key differentiator: structured workflow in skill ensures subreddit metadata, comment threads, and user demographics are systematically collected",
+    "without_skill still produces decent analysis but lacks API-level data (subreddit stats, direct quotes from comment JSON)"
+  ]
+}

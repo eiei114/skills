@@ -1,0 +1,23 @@
+{
+  "skill_name": "apple-developer-forums-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Apple Developer ForumsでCore Hapticsまわりの実装トラブルを調べて、iOSゲームでhapticを入れる時の注意点をまとめて",
+      "expected_output": "Uses Apple Developer Forums tag RSS, reports Core Haptics risk signals, cross-checks official docs, and recommends capability checks/fallbacks.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "developer.apple.com/forums から SpriteKit の最近のパフォーマンス問題を拾って、SwiftUI overlay と一緒に使う時のリスクを知りたい",
+      "expected_output": "Uses SpriteKit tag RSS, extracts performance/regression forum signals, preserves OS/device details, and distinguishes forum anecdotes from canonical guidance.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "AppDeveloper ForumでStoreKit 2の課金テスト周りの既知のつまずきを調べて。公式docsだけじゃなくフォーラムの実例が欲しい",
+      "expected_output": "Recognizes AppDeveloper Forum as Apple Developer Forums, checks StoreKit-related RSS/tag sources, summarizes forum evidence with links and caveats.",
+      "files": []
+    }
+  ]
+}

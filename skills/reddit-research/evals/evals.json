@@ -1,0 +1,137 @@
+{
+  "skill_name": "reddit-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Blox FruitsのRedditコミュニティを調査して、ユーザーがどのような不満を持っているか、どんなアップデートを望んでいるかをまとめてほしい。",
+      "expected_output": "r/bloxfruits等のサブレディットから投稿・コメントを収集し、不満カテゴリ（バランス、バグ、ペイtowin等）と要望カテゴリに分類したレポート",
+      "files": [],
+      "assertions": [
+        {
+          "name": "uses_old_reddit_json_api",
+          "expected": "Output includes references to old.reddit.com JSON API or curl commands with .json endpoints"
+        },
+        {
+          "name": "identifies_subreddit",
+          "expected": "Output identifies and references r/bloxfruits as the primary community"
+        },
+        {
+          "name": "categorizes_complaints",
+          "expected": "Output categorizes user complaints into distinct themes (e.g., balance, bugs, grind, P2W, exploiters)"
+        },
+        {
+          "name": "includes_key_quotes",
+          "expected": "Output includes direct quotes from Reddit comments to support findings"
+        },
+        {
+          "name": "provides_actionable_recommendations",
+          "expected": "Output provides prioritized list of desired updates or improvements"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Vampire SurvivorsというゲームのReddit上での評判を調べて。どんな層がプレイしていて、どんな意見が多いか知りたい。",
+      "expected_output": "r/VampireSurvivors等のサブレディットデータに基づくユーザー属性推定とセンチメント分析",
+      "files": [],
+      "assertions": [
+        {
+          "name": "uses_old_reddit_json_api",
+          "expected": "Output includes references to old.reddit.com JSON API or curl commands with .json endpoints"
+        },
+        {
+          "name": "identifies_player_demographics",
+          "expected": "Output describes at least 2-3 distinct player personas or demographic segments"
+        },
+        {
+          "name": "covers_positive_and_negative",
+          "expected": "Output covers both positive and negative sentiment with examples"
+        },
+        {
+          "name": "includes_subreddit_stats",
+          "expected": "Output includes subscriber counts or activity metrics for relevant subreddits"
+        },
+        {
+          "name": "provides_key_quotes",
+          "expected": "Output includes direct quotes from Reddit to support analysis"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Robloxのr/robloxgamedevで、最近開発者の間で何が話題になっているか調べてほしい。",
+      "expected_output": "r/robloxgamedevのホット投稿から話題トピックを抽出し、開発者の関心事を整理したレポート",
+      "files": [],
+      "assertions": [
+        {
+          "name": "uses_old_reddit_json_api",
+          "expected": "Output includes references to old.reddit.com JSON API or curl commands with .json endpoints"
+        },
+        {
+          "name": "identifies_hot_topics",
+          "expected": "Output identifies at least 3-5 distinct trending topics with supporting evidence"
+        },
+        {
+          "name": "includes_post_metrics",
+          "expected": "Output includes upvote counts, comment counts, or engagement metrics for referenced posts"
+        },
+        {
+          "name": "categorizes_by_theme",
+          "expected": "Output categorizes posts into thematic groups (e.g., platform changes, discovery, monetization)"
+        },
+        {
+          "name": "includes_key_quotes",
+          "expected": "Output includes direct quotes from developers/community members"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Redditでgame feelとjuiceの議論を調べて。JSONがブロックされたらRSSで取って",
+      "expected_output": "Tries JSON first, switches to Reddit search.rss on block/rate-limit, slows requests, and reports when evidence comes from RSS excerpts.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "tries_json_first",
+          "expected": "Output attempts or describes old.reddit.com JSON as the primary structured route"
+        },
+        {
+          "name": "uses_rss_fallback",
+          "expected": "Output uses www.reddit.com search.rss or .rss when JSON/browser routes are blocked"
+        },
+        {
+          "name": "documents_rate_limit",
+          "expected": "Output notes slower RSS request pacing or 429 handling"
+        },
+        {
+          "name": "marks_excerpt_limitations",
+          "expected": "Output distinguishes RSS excerpt evidence from full thread/comment evidence"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "r/iOSProgrammingでhaptic feedbackとsound effectsの話を探して、iOSアプリUXの示唆をまとめて",
+      "expected_output": "Searches subreddit JSON or RSS, extracts relevant posts, and synthesizes UX implications with source links.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "targets_iosprogramming",
+          "expected": "Output specifically searches or cites r/iOSProgramming"
+        },
+        {
+          "name": "covers_haptics_and_sound",
+          "expected": "Output synthesizes both haptic feedback and sound effects"
+        },
+        {
+          "name": "includes_source_links",
+          "expected": "Output includes Reddit source links or RSS-derived post links"
+        },
+        {
+          "name": "derives_ux_implications",
+          "expected": "Output converts Reddit evidence into practical iOS UX implications"
+        }
+      ]
+    }
+  ]
+}
